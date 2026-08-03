@@ -1,0 +1,881 @@
+[
+  {
+    "Story_id": "US-01",
+    "Epic": "Onboarding & User Profile",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Account Creation",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app provides a sign-up option",
+      "The user can enter required details (name, email, password, etc.)",
+      "The app validates inputs and shows errors for invalid entries",
+      "The user can successfully create an account",
+      "A confirmation message or email is sent",
+      "The user can log in immediately after account creation"
+    ],
+    "Scenario": [
+      "The user opens the app",
+      "The user selects �Sign Up�",
+      "The user enters required details",
+      "The app validates the inputs",
+      "The user submits the form",
+      "The account is created successfully",
+      "A confirmation message/email is sent",
+      "The user is redirected to the main app screen"
+    ]
+  },
+  {
+    "Story_id": "US-02",
+    "Epic": "Onboarding & User Profile",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Secure Login",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app provides a login option",
+      "The user can enter valid credentials (email/username & password)",
+      "The app validates credentials and shows errors for invalid inputs",
+      "The login process is secure (encrypted)",
+      "The user is redirected to the main app screen after successful login",
+      "Failed login attempts are handled safely"
+    ],
+    "Scenario": [
+      "The user opens the app",
+      "The user selects �Log In�",
+      "The user enters email/username and password",
+      "The app validates the credentials",
+      "If valid, the user is logged in securely",
+      "If invalid, an error message is displayed",
+      "The user is redirected to the main app screen after successful login"
+    ]
+  },
+  {
+    "Story_id": "US-03",
+    "Epic": "Onboarding & User Profile",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Basic Profile Setup",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app provides a profile setup form",
+      "The user can enter age, gender, weight, and medical history",
+      "The app validates the inputs and shows errors for invalid entries",
+      "The user can save the information successfully",
+      "The AI can access this information for analysis"
+    ],
+    "Scenario": [
+      "The user opens the profile setup",
+      "The user enters age, gender, weight, and medical history",
+      "The app validates the inputs",
+      "The user saves the information",
+      "The profile is updated successfully",
+      "The AI uses the information for personalized analysis."
+    ]
+  },
+  {
+    "Story_id": "US-04",
+    "Epic": "Onboarding & User Profile",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Continue as guest",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "Click �Continue as Guest",
+      "Fill minimal info (age, gender, weight, symptoms)",
+      "Temporary profile is created and used by AI",
+      "Profile deleted after session if not registered"
+    ],
+    "Scenario": [
+      "Open App",
+      "Click \"Continue as Guest\"",
+      "Fill profile info (age, gender, weight, symptoms)",
+      "Temporary profile created",
+      "AI analyzes profile",
+      "Provides recommendations",
+      "Receive notifications (optional)",
+      "End session",
+      "Temporary profile deleted (if not registered)"
+    ]
+  },
+  {
+    "Story_id": "US-05",
+    "Epic": "Onboarding & User Profile",
+    "Priority": "Could",
+    "MVP": true,
+    "Title": "Edit Profile",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app allows the user to access their profile",
+      "The user can update any information (age, gender, weight, medical history)",
+      "The app validates updated inputs",
+      "The user can save changes successfully",
+      "The updated information is used for AI analysis"
+    ],
+    "Scenario": [
+      "The user opens their profile",
+      "The user edits age, gender, weight, or medical history",
+      "The app validates the updates",
+      "The user saves the changes",
+      "The profile is updated successfully",
+      "The AI uses the updated information for analysis."
+    ]
+  },
+  {
+    "Story_id": "US-06",
+    "Epic": "Symptom Assessment (Core AI)",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Start Assessment",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app allows the user to start a new assessment",
+      "The assessment screen loads correctly",
+      "The user can proceed to input symptoms",
+      "The system is ready to receive symptom data"
+    ],
+    "Scenario": [
+      "The user opens the app",
+      "The user selects �Start Assessment�",
+      "The app loads the assessment screen",
+      "The user proceeds to input symptoms",
+      "The system is ready to record symptoms."
+    ]
+  },
+  {
+    "Story_id": "US-07",
+    "Epic": "Symptom Assessment (Core AI)",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Symptom Input (Text)",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app provides a text input field for symptoms",
+      "The user can type freely",
+      "The app validates text input and prevents errors",
+      "The system captures and stores the symptoms accurately"
+    ],
+    "Scenario": [
+      "The user opens the assessment",
+      "The user types symptoms in the text field",
+      "The app validates the input",
+      "The system saves the symptoms",
+      "The user can continue the assessment."
+    ]
+  },
+  {
+    "Story_id": "US-08",
+    "Epic": "Symptom Assessment (Core AI)",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Symptom Selection (Structured)",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app provides a list of predefined symptoms",
+      "The user can select one or multiple symptoms",
+      "The app validates the selection",
+      "The system stores the selected symptoms accurately"
+    ],
+    "Scenario": [
+      "The user opens the assessment",
+      "The user views the predefined symptom list",
+      "The user selects relevant symptoms",
+      "The app validates selections",
+      "The system saves the selected symptoms",
+      "The user proceeds to the next step."
+    ]
+  },
+  {
+    "Story_id": "US-09",
+    "Epic": "Symptom Assessment (Core AI)",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Follow-up Questions",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI identifies missing key information",
+      "The AI asks follow-up questions relevant to the reported symptoms",
+      "The user can answer each question",
+      "The AI adapts questions based on previous answers",
+      "Irrelevant questions are not asked"
+    ],
+    "Scenario": [
+      "The user reports a symptom",
+      "The AI detects missing details",
+      "The AI asks relevant follow-up questions (e.g., duration, intensity)",
+      "The user answers",
+      "The AI stores the responses",
+      "The AI continues the assessment"
+    ]
+  },
+  {
+    "Story_id": "US-10",
+    "Epic": "Symptom Assessment (Core AI)",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Medical History Consideration",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI retrieves user profile data securely",
+      "The AI adjusts questions based on profile data",
+      "The AI flags risk factors based on chronic conditions or age",
+      "The AI explains when recommendations are influenced by profile data"
+    ],
+    "Scenario": [
+      "The user starts an assessment",
+      "The AI retrieves profile data",
+      "The AI adjusts questions based on age, gender, and chronic diseases",
+      "The user answers",
+      "The AI provides personalized assessment",
+      "The user receives tailored recommendations"
+    ]
+  },
+  {
+    "Story_id": "US-11",
+    "Epic": "Symptom Assessment (Core AI)",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Urgency Level Detection",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI evaluates symptoms and profile data",
+      "The AI classifies urgency as low, medium, high, or emergency",
+      "The AI provides guidance based on urgency",
+      "The urgency level is clearly displayed to the user"
+    ],
+    "Scenario": [
+      "The user completes symptom reporting",
+      "The AI analyzes symptoms and profile",
+      "The AI determines urgency level",
+      "The AI displays urgency level",
+      "The user receives recommended actions",
+      "The user follows the guidance"
+    ]
+  },
+  {
+    "Story_id": "US-12",
+    "Epic": "Symptom Assessment (Core AI)",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Possible Conditions (Not Diagnosis)",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI lists possible conditions based on reported symptoms",
+      "Each condition includes a probability or likelihood indicator",
+      "The user can view details for each condition",
+      "The AI clarifies that this is not a diagnosis"
+    ],
+    "Scenario": [
+      "The user completes symptom reporting",
+      "The AI analyzes symptoms",
+      "The AI generates possible conditions with probabilities",
+      "The user views the conditions",
+      "The user understands potential causes",
+      "The user proceeds to guidance or next steps"
+    ]
+  },
+  {
+    "Story_id": "US-13",
+    "Epic": "Symptom Assessment (Core AI)",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Clear Medical Advice",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI provides easy-to-understand guidance",
+      "The guidance is actionable (home care, monitoring, seek medical attention)",
+      "The user can read the guidance clearly",
+      "The AI avoids medical jargon"
+    ],
+    "Scenario": [
+      "The user views possible conditions",
+      "The AI generates clear guidance",
+      "The user reads guidance",
+      "The user understands recommended actions",
+      "The user decides next steps",
+      "The user follows guidance"
+    ]
+  },
+  {
+    "Story_id": "US-14",
+    "Epic": "Symptom Assessment (Core AI)",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Emergency Alert",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI detects critical or life-threatening symptoms",
+      "The AI generates a clear and urgent alert",
+      "The alert includes recommended immediate actions",
+      "The alert stands out visually and/or audibly",
+      "The user understands the urgency immediately"
+    ],
+    "Scenario": [
+      "The user completes symptom reporting",
+      "The AI analyzes symptoms",
+      "The AI identifies critical symptoms",
+      "The AI triggers an emergency alert",
+      "The user sees/hears the alert",
+      "The user follows immediate recommended actions"
+    ]
+  },
+  {
+    "Story_id": "US-15",
+    "Epic": "Symptom Assessment (Core AI)",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Assessment Summary",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI generates a summary of reported symptoms, follow-up answers, possible conditions, guidance, and specialist recommendations",
+      "The summary is clear and structured",
+      "The user can download, share, or save the summary",
+      "The summary is accurate and reflects all user inputs"
+    ],
+    "Scenario": [
+      "The user completes the assessment",
+      "The AI generates consultation summary",
+      "The user views summary",
+      "The user downloads or shares summary",
+      "The user reviews summary later",
+      "The user keeps summary for personal records or medical consultation"
+    ]
+  },
+  {
+    "Story_id": "US-16",
+    "Epic": "Medical Guidance",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Personalized Health Advice",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI provides advice based on user symptoms, medical history, and profile",
+      "The advice is actionable and easy to understand",
+      "The advice is tailored to the user�s age, gender, and chronic conditions",
+      "The advice avoids medical jargon"
+    ],
+    "Scenario": [
+      "The user completes symptom assessment",
+      "The AI analyzes symptoms and profile",
+      "The AI generates personalized health advice",
+      "The user reads advice",
+      "The user understands recommended next steps",
+      "The user follows advice"
+    ]
+  },
+  {
+    "Story_id": "US-17",
+    "Epic": "Medical Guidance",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Self-Care Recommendations",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI suggests safe self-care measures for minor symptoms",
+      "The tips are clear, actionable, and evidence-based",
+      "The user can easily understand and follow tips",
+      "The AI avoids suggesting unsafe remedies"
+    ],
+    "Scenario": [
+      "The user reports minor symptoms",
+      "The AI evaluates symptoms",
+      "The AI generates self-care recommendations",
+      "The user views recommendations",
+      "The user follows tips",
+      "The user monitors symptom improvement"
+    ]
+  },
+  {
+    "Story_id": "US-18",
+    "Epic": "Medical Guidance",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "OTC Medicine Suggestions",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI suggests appropriate OTC medicines based on symptoms",
+      "The AI ensures medicines are safe for the user�s profile",
+      "Suggestions are relevant and evidence-based",
+      "The user can see why each medicine is recommended"
+    ],
+    "Scenario": [
+      "The user reports symptoms",
+      "The AI evaluates suitability for OTC medicine",
+      "The AI suggests medicines",
+      "The user views suggestions",
+      "The user decides to use the medicine",
+      "The user follows medicine guidance safely"
+    ]
+  },
+  {
+    "Story_id": "US-19",
+    "Epic": "Medical Guidance",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Medicine Usage Information",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI provides correct dosage instructions",
+      "The AI lists precautions, side effects, and contraindications",
+      "The information is clear and understandable",
+      "The user can safely follow instructions"
+    ],
+    "Scenario": [
+      "The user selects an OTC medicine",
+      "The AI displays dosage and precautions",
+      "The user reads information",
+      "The user confirms understanding",
+      "The user uses medicine safely",
+      "The user monitors for side effects"
+    ]
+  },
+  {
+    "Story_id": "US-20",
+    "Epic": "Medical Guidance",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Urgency & Next Steps",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The AI classifies urgency level (low, medium, high, emergency)",
+      "The AI provides clear next-step instructions",
+      "The guidance is personalized based on symptoms and profile",
+      "The user can easily understand recommended actions"
+    ],
+    "Scenario": [
+      "The user completes assessment",
+      "The AI determines urgency level",
+      "The AI displays next-step guidance",
+      "The user reads instructions",
+      "The user decides whether to monitor, book consultation, or seek emergency care",
+      "The user follows guidance"
+    ]
+  },
+  {
+    "Story_id": "US-21",
+    "Epic": "Consultation History",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "View Past Consultations",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app displays a list of past consultations",
+      "Each consultation shows date, symptoms summary, and urgency level",
+      "The list is scrollable and easy to navigate",
+      "The user can select any consultation to view details"
+    ],
+    "Scenario": [
+      "The user opens the app",
+      "The user navigates to consultation history",
+      "The app displays a list of past consultations",
+      "The user scrolls through the list",
+      "The user selects a consultation to view details"
+    ]
+  },
+  {
+    "Story_id": "US-22",
+    "Epic": "Consultation History",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Consultation Details",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app shows complete consultation details",
+      "Details include reported symptoms, AI analysis, follow-up questions, guidance, and urgency level",
+      "Information is displayed clearly and organized",
+      "The user can navigate back to the history list"
+    ],
+    "Scenario": [
+      "The user selects a past consultation",
+      "The app displays full consultation details",
+      "The user reviews symptoms, AI suggestions, and urgency level",
+      "The user navigates back to consultation history",
+      "The user continues browsing other consultations"
+    ]
+  },
+  {
+    "Story_id": "US-23",
+    "Epic": "Consultation History",
+    "Priority": "Must",
+    "MVP": false,
+    "Title": "Search & Filter",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app provides search and filter options",
+      "Users can filter by date range, symptom, or urgency level",
+      "Search results are accurate and relevant",
+      "Filters can be cleared to view full history"
+    ],
+    "Scenario": [
+      "The user opens consultation history",
+      "The user applies a date or symptom filter",
+      "The app displays matching consultations",
+      "The user selects a consultation from results",
+      "The user reviews details",
+      "The user clears filter to return to full history"
+    ]
+  },
+  {
+    "Story_id": "US-24",
+    "Epic": "Consultation History",
+    "Priority": "Should",
+    "MVP": false,
+    "Title": "Download Consultation Summary",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app allows downloading a consultation summary",
+      "The summary includes symptoms, AI suggestions, urgency level, and recommendations",
+      "The downloaded file is in a common format (PDF)",
+      "The user can share or save the summary easily"
+    ],
+    "Scenario": [
+      "The user opens a past consultation",
+      "The user clicks �Download Summary�",
+      "The app generates a PDF",
+      "The user downloads the file",
+      "The user shares or saves the summary",
+      "The user reviews the file later"
+    ]
+  },
+  {
+    "Story_id": "US-25",
+    "Epic": "Consultation History",
+    "Priority": "Could",
+    "MVP": false,
+    "Title": "Delete Consultation Record",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app allows deletion of a consultation",
+      "The app asks for confirmation before deletion",
+      "Deleted consultations are permanently removed",
+      "The user receives a success notification after deletion"
+    ],
+    "Scenario": [
+      "The user opens consultation history",
+      "The user selects a consultation",
+      "The user clicks �Delete�",
+      "The app asks for confirmation",
+      "The user confirms",
+      "The app removes consultation",
+      "The user sees updated list"
+    ]
+  },
+  {
+    "Story_id": "US-26",
+    "Epic": "Consultation History",
+    "Priority": "Could",
+    "MVP": true,
+    "Title": "Secure Data Storage",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "Consultation data is encrypted in storage",
+      "Access is restricted to authenticated users only",
+      "Data transmission is secure",
+      "The app complies with privacy regulations (e.g., HIPAA, GDPR)"
+    ],
+    "Scenario": [
+      "The user completes a consultation",
+      "The app stores consultation securely",
+      "The user logs in later",
+      "The app retrieves data securely",
+      "The user accesses consultation history",
+      "The app ensures privacy is maintained"
+    ]
+  },
+  {
+    "Story_id": "US-27",
+    "Epic": "Subscription  & Plans",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "View Subscription Plans",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app displays all available subscription plans",
+      "Each plan shows features, pricing, and duration",
+      "Plans are easy to compare",
+      "Users can select a plan to subscribe"
+    ],
+    "Scenario": [
+      "The user opens subscription section",
+      "The app displays all subscription plans",
+      "The user reviews features and pricing",
+      "The user selects a plan",
+      "The user proceeds to subscribe"
+    ]
+  },
+  {
+    "Story_id": "US-28",
+    "Epic": "Subscription  & Plans",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "See Free Consultation Counter",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app shows the remaining number of free consultations",
+      "The counter updates automatically after each consultation",
+      "The counter is visible in the dashboard or subscription section"
+    ],
+    "Scenario": [
+      "The user opens dashboard",
+      "The app displays free consultation counter",
+      "The user checks remaining consultations",
+      "The counter updates after each consultation",
+      "The user decides on usage"
+    ]
+  },
+  {
+    "Story_id": "US-29",
+    "Epic": "Subscription  & Plans",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Upgrade to Premium",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app offers upgrade option when free consultations are exhausted",
+      "Upgrade process is clear and accessible",
+      "Users can select a premium plan and proceed to payment",
+      "Upgrade takes effect immediately"
+    ],
+    "Scenario": [
+      "The user reaches free consultation limit",
+      "The app prompts upgrade",
+      "The user selects premium plan",
+      "The user proceeds to payment",
+      "The app confirms upgrade",
+      "The user continues consultations"
+    ]
+  },
+  {
+    "Story_id": "US-30",
+    "Epic": "Subscription  & Plans",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Secure Payment",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app supports secure payment methods",
+      "Payment is encrypted",
+      "Users receive a payment confirmation",
+      "Payment information is not stored insecurely"
+    ],
+    "Scenario": [
+      "The user selects premium plan",
+      "The user enters payment information",
+      "The app processes payment securely",
+      "The app confirms successful payment",
+      "The user subscription is activated"
+    ]
+  },
+  {
+    "Story_id": "US-31",
+    "Epic": "Subscription  & Plans",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Subscription Confirmation",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app provides immediate confirmation of subscription",
+      "Confirmation includes plan details and start/end dates",
+      "Confirmation is shown in-app and optionally via email"
+    ],
+    "Scenario": [
+      "The user completes payment",
+      "The app displays subscription confirmation",
+      "The user views plan details",
+      "The app optionally sends email confirmation",
+      "The user sees plan activated"
+    ]
+  },
+  {
+    "Story_id": "US-32",
+    "Epic": "Subscription  & Plans",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "View Subscription Status",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app shows current subscription status",
+      "Expiration and renewal dates are clearly displayed",
+      "Users can see plan type and features"
+    ],
+    "Scenario": [
+      "The user opens subscription section",
+      "The app displays subscription status",
+      "The user views expiration date",
+      "The user checks plan features",
+      "The user plans for renewal"
+    ]
+  },
+  {
+    "Story_id": "US-33",
+    "Epic": "Subscription  & Plans",
+    "Priority": "Must",
+    "MVP": false,
+    "Title": "Cancel Subscription",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app allows users to cancel subscription",
+      "Cancellation process is clear and easy",
+      "Users receive confirmation of cancellation",
+      "Access remains until the end of paid period"
+    ],
+    "Scenario": [
+      "The user opens subscription section",
+      "The user selects �Cancel Subscription�",
+      "The app asks for confirmation",
+      "The user confirms",
+      "The app processes cancellation",
+      "The user receives confirmation",
+      "Access continues until expiry"
+    ]
+  },
+  {
+    "Story_id": "US-34",
+    "Epic": "Subscription  & Plans",
+    "Priority": "Should",
+    "MVP": true,
+    "Title": "Limit Access After Free Usage",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The app tracks number of free consultations",
+      "The user is notified when the limit is reached",
+      "Notification clearly explains need to upgrade",
+      "User cannot exceed free consultation limit without upgrade"
+    ],
+    "Scenario": [
+      "The user completes the 5th free consultation",
+      "The app triggers notification",
+      "The user reads notification",
+      "The app blocks additional free consultations",
+      "The user sees upgrade option",
+      "The user chooses to upgrade or wait"
+    ]
+  },
+  {
+    "Story_id": "US-35",
+    "Epic": "Gamification",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Earn Points",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "he user receives points after completing a consultation",
+      "The points are added automatically",
+      "The user can see the points in their profile",
+      "The points are saved correctly"
+    ],
+    "Scenario": [
+      "The user opens the app",
+      "The user completes a consultation",
+      "The consultation ends",
+      "The system gives points",
+      "The points appear in the user profile",
+      "The points are saved successfully"
+    ]
+  },
+  {
+    "Story_id": "US-36",
+    "Epic": "Gamification",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Unlock Badges",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The user receives a badge after completing a defined number of consultations",
+      "The badge appears in the profile",
+      "The user receives a notification"
+    ],
+    "Scenario": [
+      "The user opens the app",
+      "The user completes consultations",
+      "The user reaches the badge condition",
+      "The system unlocks the badge",
+      "The badge appears in the profile",
+      "The user receives notification"
+    ]
+  },
+  {
+    "Story_id": "US-37",
+    "Epic": "Gamification",
+    "Priority": "Should",
+    "MVP": true,
+    "Title": "Level Progression",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The user level increases automatically",
+      "The level is based on points",
+      "The level is visible in profile"
+    ],
+    "Scenario": [
+      "The user opens the app",
+      "The user earns points",
+      "The points reach level requirement",
+      "The system upgrades the level",
+      "The new level appears in profile"
+    ]
+  },
+  {
+    "Story_id": "US-38",
+    "Epic": "Gamification",
+    "Priority": "Should",
+    "MVP": false,
+    "Title": "Rewards",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The user receives rewards after reaching specific levels",
+      "The reward is visible",
+      "The reward can be used"
+    ],
+    "Scenario": [
+      "The user opens the app",
+      "The user earns points",
+      "The user reaches reward level",
+      "The system gives reward",
+      "The reward appears in profile"
+    ]
+  },
+  {
+    "Story_id": "US-39",
+    "Epic": "Gamification",
+    "Priority": "Could",
+    "MVP": false,
+    "Title": "Daily Challenge",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The user sees daily challenge",
+      "The user completes challenge",
+      "The system gives points"
+    ],
+    "Scenario": [
+      "The user opens the app",
+      "The daily challenge appears",
+      "The user completes challenge",
+      "The system gives points",
+      "The points appear in profile"
+    ]
+  },
+  {
+    "Story_id": "US-40",
+    "Epic": "Gamification",
+    "Priority": "Must",
+    "MVP": true,
+    "Title": "Premium Rewards",
+    "User_Stories": null,
+    "Acceptance_Criteria": [
+      "The system identifies the user as premium",
+      "Premium users receive exclusive rewards",
+      "The reward appears in the user profile",
+      "The user receives a notification",
+      "Free users cannot access premium rewards"
+    ],
+    "Scenario": [
+      "The user opens the app",
+      "The user subscribes to premium",
+      "The system activates premium status",
+      "The user reaches reward condition",
+      "The system gives exclusive reward",
+      "The reward appears in the profile",
+      "The user receives notification"
+    ]
+  }
+]
